@@ -46,7 +46,7 @@ btnGenera.addEventListener('click', function() {
     }
 
   //carrozza
-  yourCarrozza.innerHTML = Math.floor(Math.random() * 14 + 1); // poniamo che ci siano 15 carrozze
+  yourCarrozza.innerHTML = Math.floor(Math.random() * 15 + 1); // poniamo che ci siano 15 carrozze
 
   //codice CP
   yourCpCode.innerHTML = Math.floor(Math.random() * (100000 - 90000)) + 90000;
@@ -70,3 +70,7 @@ btnAnnulla.addEventListener('click', function() {
   document.getElementById("input_line").reset();
   
 })
+
+
+// SOME STYLE
+document.getElementById('detail').style.marginBottom = "0";

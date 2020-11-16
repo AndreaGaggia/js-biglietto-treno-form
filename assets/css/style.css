@@ -12,12 +12,23 @@ h2 {
 button {
   color: #B91350;
   font-weight: bold;
+  font-size: 18px;
+}
+
+hr {
+  margin: 0;
 }
 
 input, select {
   border: 1px solid #B91350;
   border-radius: 4px;
   margin-top: 20px;
+}
+
+input:focus, select:focus {
+  background-color: #B91350;
+  color: #fff;
+  font-weight: 800;
 }
 
 /* ticket generator section */
