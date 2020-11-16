@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>biglietto treno form</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ticket generator -->
+  <section id="ticket_generator">
+    <h2>calcola il prezzo del tuo biglietto</h2>
+    <div class="card">
+      <!-- riga degli input -->
+      <form id="input_line">
+        <div class="username">
+          <label for="username">Nome e Cognome</label>
+          <input type="text" id="username" value="">
+        </div>
+        <div class="travel_distance">
+          <label for="travel_distance">Km da percorrere</label>
+          <input type="number" id="travel_distance" value="">
+        </div>
+        <div class="age_class">
+          <label for="age_class">Fascia d'età</label>
+          <select name="" id="age_class">
+            <option value=""></option>
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+          </select>
+        </div>
+      </form>
+      <!-- riga dei bottoni -->
+      <div class="btn_line">
+        <button id="btn_genera">Genera</button>
+        <button id="btn_annulla">Annulla</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- your ticket -->
+  <section id="your_ticket">
+    <h2>il tuo biglietto</h2>
+    <!-- card -->
+    <div class="card">
+      <h3>DETTAGLIO PASSEGGERI</h3>
+      <hr>
+      <div class="ticket_info">
+        <div class="passenger_name">
+          <h3>NOME PASSEGGERO:</h3>
+          <h3 id="passenger_name"></h3>
+        </div>
+        <div class="other_info">
+          <div class="offer">
+            <h3>Offerta</h3>
+            <span id="offer"></span>
+          </div>
+          <div class="carrozza">
+            <h3>Carrozza</h3>
+            <span id="carrozza"></span>
+          </div>
+          <div class="cp_code">
+            <h3>Codice CP</h3>
+            <span id="cp_code"></span>
+          </div>
+          <div class="price">
+            <h3>Costo biglietto</h3>
+            <span id="price"></span>
+          </div>
+        </div>
+      </div>
+      <hr>
+    </div>
+    
+  </section>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

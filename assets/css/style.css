@@ -1,0 +1,86 @@
+body {
+  background-color: #B91350;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+button {
+  color: #B91350;
+  font-weight: bold;
+}
+
+input, select {
+  border: 1px solid #B91350;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/* ticket generator section */
+#ticket_generator .card {
+  width: 800px;
+  margin: auto;
+  background-color: #fff;
+  color: #B91350;
+  padding: 20px;
+  border-radius: .8rem;
+  box-shadow: 0 0 6px black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#input_line {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+#input_line > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc(100% / 3);
+}
+
+
+/* your ticket section */
+#your_ticket {
+  opacity: 0;
+}
+#your_ticket .card {
+  width: 800px;
+  margin: auto;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  padding: 20px;
+}
+
+.ticket_info, .other_info {
+  display: flex;
+}
+
+.passenger_name {
+  width: 200px;
+  background-color: grey;
+  padding-left: 20px;
+}
+
+.other_info {
+  width: calc(100% - 200px);
+  justify-content: space-evenly;
+}
+
+.other_info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  max-width: 150px;
+  padding: 20px 0;
+}
